@@ -4,7 +4,7 @@ JavaScript Course
 
 ## Week 1
 
-### Sunday 06, Dec 2020 [Features and Grammar]
+### Saturday 05, Dec 2020 [Features and Grammar]
 It's the only Isomorphic Programming Language, which is able to execute on the 3 layers of an application:
 
 1. **Frontend** (JavaScript)
@@ -91,3 +91,36 @@ const ajax = new XMLHttpRequest(),
 - array = []
 - function () { }
 - Class {}
+
+### Sunday 06, Dec 2020 [Variables (var vs let)]
+**Variables**  
+Before 2015, JS has the global scope and the functional one, but it doesn't have a block scope. In a browser environment, the global scope is controlled by the **window**.
+
+**Global scope variable**
+```js
+var hello = "Hello World"
+```
+
+With **ECMAScript 6** we can use the block scope using the **"let"** reserved word 
+```js
+let hello = "Hello World"
+```
+Block scopes are different from function scopes in JavaScript.
+
+- **Block scope**
+```js
+{
+  let music = "Alternative Pop"
+}
+```
+
+- **Function Scope**
+```js
+function scopeExample() {
+  let music = "Japanese Pop"
+}
+```
+
+Therefore, it's considered bad practice to use the **"var"** reserved word, because it can get you into a value realloaction problem. The **Window** object containts the variables declared with **var**, that is, they will stay in the global scope.
+
+
