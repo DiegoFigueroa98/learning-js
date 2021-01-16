@@ -1,3 +1,4 @@
+'use strict'
 // Variable: Var vs Let
 var helloVar = 'Hello Diego';
 let helloLet = 'Hello Diego';
