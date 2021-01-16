@@ -123,4 +123,22 @@ function scopeExample() {
 
 Therefore, it's considered bad practice to use the **"var"** reserved word, because it can get you into a value realloaction problem. The **Window** object containts the variables declared with **var**, that is, they will stay in the global scope.
 
+### Monday 07, Dec 2020 [Constants (const)]
+**Constants**
+A **constant** is a value that cannot be altered by the program during normal execution. It cannot change through re-assignment, and it can't be redeclared .An initializer for a **constant** is required; that is, you must specify its value in the same statement in which it's declared.
 
+```js
+// Correct way
+const PI = 3.1416;
+
+// Wrong way (Uncaught syntax error)
+const NINE;
+```
+**Composites** datatypes properties can be change during normal execution, but primitives ones can't do it.
+
+If along the flow of an application a varible datatype is going to change, then **"let"** is used, otherwise it is better to use **"const"**.
+
+### Tuesday 16, Jan 2020 [Strings]
+An **object** is a data collection that has properties and methods. The **String** object is used to represent and manipulate a sequence of characters. Strings are useful for holding data that can be represented in text form.
+
+Strings can be created as primitives, from string literals, or as objects, using the String() constructor:
