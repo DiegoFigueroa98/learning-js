@@ -178,3 +178,89 @@ console.log(sevenDecimal + stringNumber);
 ```
 
 JavaScript has some issues in numbers operations, so it is recommended to use libraries when you are going to make more exact calculations.
+
+### Friday 10, Dec 2020 [Booleans]
+**Boolean object**
+The value passed as the first parameter is converted to a boolean value, if necessary. If the value is omitted or is 0, -0, null, false, NaN, undefined, or the empty string (""), the object has an initial value of false. All other values, including any object, an empty array ([]), or the string "false", create an object with an initial value of true.
+
+Do not confuse the **primitive** **Boolean** values true and false with the true and false values of the **Boolean** object.
+
+Any object of which the value is not undefined or null, including a **Boolean** object whose value is false, evaluates to true when passed to a conditional statement. For example, the condition in the following if statement evaluates to true:
+
+```js
+let falseBoolean = new Boolean(false);
+if (falseBooelan) {
+  // This code is executed
+}
+```
+
+This behavior does not apply to Boolean primitives. For example, the condition in the following if statement evaluates to false:
+
+```js
+let falseBoolean = false;
+if (falseBoolean) {
+  // this code is not executed
+}
+```
+Do not use a Boolean object to convert a non-boolean value to a boolean value. To perform this task, instead, use Boolean as a function, or a double NOT operator:
+
+```js
+let foo = Boolean(expression);     // use this...
+let faa = !!(expression);          // ...or this
+let fuu = new Boolean(expression); // don't use this!
+```
+
+If you specify any object, including a Boolean object whose value is false, as the initial value of a Boolean object, the new Boolean object has a value of true.
+
+```js
+let myFalse = new Boolean(false);   // initial value of false
+let falseBoolean = Boolean(myFalse);       // initial value of true
+let myString = new String('Hello'); // string object
+let stringBoolean = Boolean(myString);      // initial value of true
+```
+
+**Truthy**
+In JavaScript, a **truthy** value is a value that is considered true when encountered in a Boolean context. All values are **truthy** unless they are defined as falsy (i.e., except for false, 0, -0, 0n, "", null, undefined, and NaN).
+
+Examples of truthy values in JavaScript (which will be coerced to true in boolean contexts, and thus execute the if block):
+```js
+if (true)
+if ({})
+if ([])
+if (42)
+if ("0")
+if ("false")
+if (new Date())
+if (-42)
+if (12n)
+if (3.14)
+if (-3.14)
+if (Infinity)
+if (-Infinity)
+```
+
+**Falsy**
+A falsy value is a value that is considered false when encountered in a Boolean context.
+
+Examples of falsy values in JavaScript (which are coerced to false in Boolean contexts, and thus bypass the if block):
+
+```js
+if (false)
+if (null)
+if (undefined)
+if (0)
+if (-0)
+if (0n)
+if (NaN)
+if ("")
+```
+
+If the first object is falsy, it returns that object
+
+```js
+false && "dog"
+// ↪ false
+
+0 && "dog"
+// ↪ 0
+```
