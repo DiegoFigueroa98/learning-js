@@ -264,3 +264,25 @@ false && "dog"
 0 && "dog"
 // ↪ 0
 ```
+
+### Saturday 11, Dec 2020 [Primitives]
+**Null and Undefinied**
+Both ot them represent a variable that has not a value.
+
+**Undefinied** indicates that a variable has not been initialized and that the value is absent
+
+**Null** is a special value that represent the value absent.
+
+**NaN (not a number)**
+The global NaN property is a value representing Not-A-Number.
+
+```js
+let myUndefinied;
+console.log(myUndefinied);
+
+let myNull = null;
+console.log(myNull);
+
+let notNumber = 18.1 * 'hola';
+console.log(notNumber);
+```
