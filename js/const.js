@@ -5,8 +5,8 @@ console.log(PI);
 // Composites datatypes
 // Object
 const object = {
-    name:  'Diego',
-    age: 35
+  name:  'Diego',
+  age: 35
 }
 
 // Array

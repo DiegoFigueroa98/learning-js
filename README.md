@@ -157,3 +157,24 @@ let greeting = 'Hi, my name is ' + myName + ' ' + lastName;
 ```js
 let greeting = `Hi, my name is ${myName} ${lastName}`;
 ```
+
+### Thursday 09, Dec 2020 [Numbers]
+**Number** is a primitive wrapper object used to represent and manipulate numbers like 37 or -9.25. The **Number** constructor contains constants and methods for working with numbers. Values of other types can be converted to numbers using the **Number()** function.
+
+When used as a function, Number(value) converts a string or other value to the **Number** type. If the value can't be converted, it returns **NaN**.
+
+```js
+let one = new Number(1);
+```
+
+if you perform an operation of a string with a number, Javascript converts the number to string and makes a concatenation. You need to be carefully with this situation.
+
+```js
+let sevenDecimal = 7.19;
+let stringNumber = '5.6';
+
+// This will give '7.195.6'
+console.log(sevenDecimal + stringNumber);
+```
+
+JavaScript has some issues in numbers operations, so it is recommended to use libraries when you are going to make more exact calculations.
