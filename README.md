@@ -138,7 +138,22 @@ const NINE;
 
 If along the flow of an application a varible datatype is going to change, then **"let"** is used, otherwise it is better to use **"const"**.
 
-### Tuesday 16, Jan 2020 [Strings]
+### Tuesday 08, Dec 2020 [Strings]
 An **object** is a data collection that has properties and methods. The **String** object is used to represent and manipulate a sequence of characters. Strings are useful for holding data that can be represented in text form.
 
 Strings can be created as primitives, from string literals, or as objects, using the String() constructor:
+
+### Wednesday 08, Dec 2020 [Template Strings]
+Template literals are string literals allowing embedded expressions. You can use multi-line strings and string interpolation features with them.
+
+**Concatenation**
+
+```js
+let myName = 'Diego';
+let lastName = 'Figueroa';
+let greeting = 'Hi, my name is ' + myName + ' ' + lastName;
+```
+**Interpolation**
+```js
+let greeting = `Hi, my name is ${myName} ${lastName}`;
+```
