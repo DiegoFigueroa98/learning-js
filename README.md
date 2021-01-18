@@ -286,3 +286,46 @@ console.log(myNull);
 let notNumber = 18.1 * 'hola';
 console.log(notNumber);
 ```
+### Sunday 12, Dec 2020 [Functions]
+A **function** is an auto-content block code that may be defined once and be executed at any moment. It might receive parameters and return a value.
+
+**Functions** are a special type of JavaScript object.
+
+A **function** definition consists of the **function** keyword, followed by:
+
+- The name of the function.
+- A list of parameters to the function, enclosed in parentheses and separated by commas.
+- The JavaScript statements that define the function, enclosed in curly brackets, {...}.
+
+**Hoisting**
+Hoisting was thought up as a general way of thinking about how execution contexts (specifically the creation and execution phases) work in JavaScript.
+
+Conceptually, for example, a strict definition of hoisting suggests that variable and function declarations are physically moved to the top of your code, but this is not in fact what happens. Instead, the variable and function declarations are put into memory during the compile phase, but stay exactly where you typed them in your code.
+
+One of the advantages of JavaScript putting function declarations into memory before it executes any code segment is that it allows you to use a function before you declare it in your code. For example:
+
+```js
+function catName(name) {
+  console.log("My cat's name is " + name);
+}
+
+catName("Tiger");
+```
+
+The above code snippet is how you would expect to write the code for it to work. Now, let's see what happens when we call the function before we write it:
+
+```js
+catName("Chloe");
+
+function catName(name) {
+  console.log("My cat's name is " + name);
+}
+```
+
+Even though we call the function in our code first, before the function is written, the code still works. This is because of how context execution works in JavaScript.
+
+Hoisting works well with other data types and variables. The variables can be initialized and used before they are declared.
+
+JavaScript only hoists declarations, not initializations. If a variable is declared and initialized after using it, the value will be undefined.
+
+Expressed/Anonymous function can't be called before initialization.

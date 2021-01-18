@@ -1,3 +1,4 @@
+'use strict'
 // Undefinied has no value assignment
 let myUndefinied;
 console.log(myUndefinied);

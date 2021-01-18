@@ -28,5 +28,3 @@ falseBoolean = new Boolean(false);
 if (falseBoolean) {
   console.log("Hello world");
 }
-
-// Truthy
