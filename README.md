@@ -329,3 +329,8 @@ Hoisting works well with other data types and variables. The variables can be in
 JavaScript only hoists declarations, not initializations. If a variable is declared and initialized after using it, the value will be undefined.
 
 Expressed/Anonymous function can't be called before initialization.
+
+### Sunday 12, Dec 2020 [Arrays]
+An **array** is an elements collection you can store any of your stuff in.
+
+**Arrays** are list-like objects whose prototype has methods to perform traversal and mutation operations. Neither the length of a JavaScript array nor the types of its elements are fixed.
