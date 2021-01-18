@@ -1,3 +1,4 @@
+'use strict'
 let trueValue = true;
 let falseValue = false;
 let trueBoolean = Boolean(true);

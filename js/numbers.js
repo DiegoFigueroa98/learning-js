@@ -1,3 +1,4 @@
+'use strict'
 let two = 2;
 let one = new Number(1);
 let sevenDecimal = 7.19;

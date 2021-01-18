@@ -1,3 +1,4 @@
+'use strict'
 let myName = 'Diego';
 let lastName = 'Figueroa';
 

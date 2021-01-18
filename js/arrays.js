@@ -1,3 +1,4 @@
+'use strict'
 const emptyArray = [];
 console.log(emptyArray);
 

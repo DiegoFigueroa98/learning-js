@@ -334,3 +334,6 @@ Expressed/Anonymous function can't be called before initialization.
 An **array** is an elements collection you can store any of your stuff in.
 
 **Arrays** are list-like objects whose prototype has methods to perform traversal and mutation operations. Neither the length of a JavaScript array nor the types of its elements are fixed.
+
+### Monday 13, Dec 2020 [Objects]
+The **Object** class represents one of JavaScript's data types. It is used to store various keyed collections and more complex entities. **Objects** can be created using the **Object()** constructor or the **object** initializer / literal syntax.
